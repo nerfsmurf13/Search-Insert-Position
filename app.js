@@ -31,11 +31,17 @@ var searchInsert = function (nums, target) {
   //if larger, move pointer to middle of the bigger scope
   //will also need 2 points to designate the current scope.
   let scopeStart = 0;
-  let scopeEnd = nums.length - 1;
+  let scopeEnd = nums.length;
   let pointer = 0;
   console.log(
     "Pointer: " + pointer + ", " + "Scope " + scopeStart + "-" + scopeEnd
   );
+  var checkScope = (arr, target, a, z, point) => {
+    if (point == target) {
+      return point;
+    } else {
+    }
+  };
 };
 
 searchInsert([1, 3, 5, 6], 5);
